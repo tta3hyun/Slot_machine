@@ -6,7 +6,7 @@ MIN_BET = 1
 
 ROWS = 3
 COLS = 3
-
+   
 symbol_count = {
     'A': 3,
     'B': 6,
@@ -57,6 +57,7 @@ def get_slot_spin(rows, cols, symbols):
     return columns
 
 def print_slot(columns):
+    print(columns)
     for row in range(len(columns[0])):
         for i, column in enumerate (columns):
             if i != len(columns) -1:
